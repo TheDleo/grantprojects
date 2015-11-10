@@ -1,4 +1,32 @@
-<nav data-uk-sticky id="items" class="uk-navbar">
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+
+
+    <title>Responsive Portfolio with UIkit</title>
+    
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/uikit.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/sticky.min.css'>
+
+  <style>
+    /*
+    NOTE: Only the first item has the modal overlay functionality
+    */
+
+    /* This is to override a bizarre line in UIkit's navbar styles */
+    .uk-navbar-nav>li>a[href='#'] {
+      cursor: pointer;
+    }
+  </style>
+
+  </head>
+
+  <body>
+
+  <nav data-uk-sticky id="items" class="uk-navbar">
   <label class="uk-navbar-content uk-hidden-small">Filter:</label>
   <ul class="uk-navbar-nav uk-hidden-small">
     <li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
@@ -232,3 +260,27 @@
   </div>
 
 </div>
+      <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-f961f59a28ef4fd551736b43f94620b5.js"></script>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/uikit.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/grid.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/sticky.min.js'></script>
+
+        <script>
+      // See:
+// http://www.sitepoint.com/building-responsive-portfolio-uikit
+      //@ sourceURL=pen.js
+    </script>
+
+    
+    <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+    
+  </body>
+</html>
+ 
