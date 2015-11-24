@@ -1,42 +1,28 @@
 
 <button class="uk-button" data-uk-offcanvas="{target:'#side-nav'}">...</button>
-<div id="side-nav" class="uk-offcanvas">
-  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip uk-offcanvas-bar-show">
-    <nav id="items" class="uk-nav uk-nav-offcanvas">
-      <label class="uk-navbar-content uk-hidden-small">Filter:</label>
-      <ul class="uk-navbar-nav uk-hidden-small">
-        <li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
-        <li data-uk-filter="blue"><a href="#">BLUE</a></li>
-        <li data-uk-filter="green"><a href="#">GREEN</a></li>
-      </ul>
-
-      <label class="uk-navbar-content uk-hidden-small">Sort:</label>
-      <ul class="uk-navbar-nav uk-hidden-small">
-        <li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
-        <li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
-        <li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
-        <li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
-      </ul>
-      <div data-uk-dropdown="{mode:'click'}">
-        <a href="#" class="uk-navbar-toggle uk-visible-small"></a>
-        <div class="uk-dropdown uk-dropdown-navbar">
-          <ul class="uk-nav uk-nav-navbar">
-            <li class="uk-nav-header">Filter:</li>
-            <li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
-            <li data-uk-filter="blue"><a href="#">BLUE</a></li>
-            <li data-uk-filter="green"><a href="#">GREEN</a></li>
-            <li class="uk-nav-divider"></li>
+<div id="side-nav" class="uk-offcanvas-bar-show uk-align-right">
+  <div id="items">
+    <div class="uk-button-dropdown uk-panel" data-uk-dropdown>
+      <button class="uk-button">Filter</button>
+      <div class="uk-dropdown uk-dropdown-small">
+          <ul class="uk-nav uk-nav-dropdown">
+            <li data-uk-filter=""><a href="#">All</a></li>
+            <li data-uk-filter="blue"><a href="#">Blue</a></li>
+            <li data-uk-filter="green"><a href="#">Green</a></li>
           </ul>
-          <ul class="uk-nav uk-nav-navbar">
-            <li class="uk-nav-header">Sort:</li>
-            <li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
-            <li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
-            <li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
-            <li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
-          </ul>
-        </div>
       </div>
-    </nav>
+    </div>
+    <div class="uk-button-dropdown uk-panel" data-uk-dropdown>
+      <button class="uk-button">Sort</button>
+      <div id="sort" class="uk-dropdown uk-dropdown-small">
+          <ul class="uk-nav uk-nav-dropdown">
+            <li data-uk-sort="numbers"><a href="#">Numbers (ascending) <i class="uk-icon-sort-numeric-asc"></i></a></li>
+            <li data-uk-sort="numbers:desc"><a href="#">Numbers (descending) <i class="uk-icon-sort-numeric-desc"></i></a></li>
+            <li data-uk-sort="letters"><a href="#">Alpha (ascending) <i class="uk-icon-sort-alpha-asc"></i></a></li>
+            <li data-uk-sort="letters:desc"><a href="#">Alpha (descending) <i class="uk-icon-sort-alpha-desc"></i></a></li>
+          </ul>
+      </div>
+    </div>
   </div>
 </div>
 
